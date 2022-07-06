@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Takura's Survey Form</title>
+     <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <div>
+      <h1 id="title">My Survey Form</h1>
+      <p id="description">Please Fill Out this Survey Form</p>
+      <form id="survey-form">
+        <fieldset>
+        <label for="name">Enter your name: <input id="name-label" placeholder="Jon Snow" type="text" required></label>
+        <label for="email">Enter your email: <input id="email-label" placeholder="jsnow@yourmail.com" type="email" required></label>
+        <label for="age"> Enter your age: <input type="number" min="12" placeholder="23" max="100" id="number-label" required></label>
+    </fieldset>
+    <fieldset>
+      <label>What is your Current Profesion?
+        <select id="dropdown">
+        <option value="">(Please select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Employed</option>
+            <option value="3">Freelancer</option>
+            <option value="4">Other</option>
+          </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="recommendation">Would you recommend programming to a friend?</label>
+      <label><input class="inline" type="radio" name="recommendation"> Definitely Yes</label>
+      <label><input class="inline" type="radio" name="recommendation"> Definitely No</label>
+      <label><input class="inline" type="radio" name="recommendation"> Not Sure</label>
+    </fieldset>
+    <label>What made you fall in love with Programming
+      <select id="dropdown">
+      <option value="">(Please select one)</option>
+          <option value="1">School</option>
+          <option value="2">Friends</option>
+          <option value="3">Other</option> 
+        </select>
+    </label>
+  </fieldset>
+    <fieldset>
+      <label>Tick the programming languages that you are good at:</label>
+       <label><input class="inline" type="checkbox">C/C++</label>
+       <label><input class="inline" type="checkbox">Java</label>
+       <label><input class="inline" type="checkbox">Python</label> 
+       <label><input class="inline" type="checkbox">C#</label>
+       <label><input class="inline" type="checkbox">R</label> 
+       <label><input class="inline" type="checkbox">Ruby</label> 
+    </fieldset>
+    <fieldset>
+      <label>Any Further Comments:
+        <textarea rows="3" cols="30" placeholder="Any other interests..."></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" class="submit-button" value="Submit" />
+    </form>
+  </div>
+  <footer>
+    &copy; Takura Chris Mbizwo 2022
+  </footer>
+      </body>
+  </html>
